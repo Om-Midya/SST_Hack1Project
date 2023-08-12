@@ -1,0 +1,141 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    color: #fff;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    cursor: none;
+}
+
+#nav{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 45px;
+    padding: 0 150px;
+    position:fixed;
+    z-index: 99;
+}
+#nav h4{
+    text-transform: uppercase ;
+    font-family: 500;
+}
+#cursor{
+    height:25px;
+    width: 25px;
+    background-color: #E4A558;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 100;
+}
+
+video{
+    z-index: -1;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+.main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.429) ;
+
+}
+
+#page1{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#page1 h1{
+    font-size: 100px;
+    font-weight: 900;
+    position: relative;
+
+}
+#page1 h1::before{
+    content:'WALK, EXPLORE, THRIVE.';
+    position: absolute;
+    color: black;
+    top:-6px;
+    left:-6px;
+    -webkit-text-stroke: 2px  #F39237;
+    z-index: -1;
+
+}
+
+#page1 h2{
+    font-size: 35px;
+    font-weight: 750;
+    margin-top:10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#page1 h2::before{
+    content:"WELCOME TO NATUREWALK TOURS!!";
+    position: absolute;
+    color: black;
+    top:-5px;
+    left:-5px;
+    -webkit-text-stroke: 1px #66B9BF;
+    z-index: -1;
+}
+
+#page1 p{
+    font-size: 20px;
+    font-weight: 400;
+    width: 50%;
+}
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+
+}
+
+#about-us {
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    justify-content: space-around;
+  }
+  #about-us img {
+    height: 220px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  #about-us-in {
+    width: 50%;
+    text-align: center;
+  }
+  #about-us-in h3 {
+    font-size: 54px;
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+  #about-us-in p {
+    font-size: 20px;
+    line-height: 26px;
+  }
